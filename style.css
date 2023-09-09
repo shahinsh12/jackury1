@@ -1,0 +1,166 @@
+/* common css start */
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    ul,ol{
+        list-style: none;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    
+    
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .container{
+        width: 1170px;
+        margin: auto;
+    }
+    
+    
+    .row{
+        display: flex;
+    flex-wrap: wrap;
+    }
+    
+    
+    .align-center{
+        align-items: center;
+    }
+    
+    .justify-center{
+        justify-content: center}
+    /* common css end */
+    
+    
+    nav{
+        background-color: #ddd;
+        padding: 20px 0;}
+    
+    nav button{
+        background-color: whitesmoke;
+        border: none;
+        outline: none;
+        padding: 15px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: cornsilk;}
+
+        nav button:hover{
+            background-color: aliceblue;
+        }
+    
+    
+    .sidebar{
+        background-color: rgba(15, 16, 16, 0.102);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        cursor: pointer;
+        transition: 0.25s;}
+    
+    .sidebar.active{
+        opacity: 1;
+        visibility: visible;}
+    
+    .sidebar-cnt{
+        width: 300px;
+        height: 100%;
+        background-color: white;
+        padding: 40px;
+        transform: translateX(-100%);
+        transition: 0.45s;}
+    
+    .sidebar.active .sidebar-cnt{
+        transform: translateX(0);
+      
+    }
+    
+        
+    
+    .logo{
+        width: 70%;}
+    
+    .menupart{
+        width: 30%;
+        text-align: right;}
+    
+    .menupart button{
+        background-color: transparent !important;
+    border: none;
+    outline: none;
+    font-size:25px;
+    padding-left: 70px;
+    cursor: pointer;}
+    
+    .sidebar-cnt ul{margin-top: 20px;
+    text-align: center;}
+    
+    .sidebar-cnt a{
+        color: black;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        display: block;}
+
+
+        .searcharea{
+            position: fixed;
+            inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transform: scale(0);
+          transition: 0.25s;
+          
+        }
+        .searcharea.active{
+            transform:scale(1);
+         }
+         .searcharea input{
+            width: 600px;
+            height: 50px;
+            padding: 15px 0;
+            cursor: pointer;
+            background-color: darkblue;
+            color: aqua;
+        }
+
+
+        .searcharea input:hover{
+            background-color: aquamarine;
+        }
+
+        .cancelbtn{
+            position: absolute;
+            right: 50px;
+            top: 20px;
+            padding: 20px;
+            border: none;
+            outline: none;
+            background-color: blueviolet;
+            color: violet;
+        font-size: x-large;
+            cursor: pointer;
+        transition: 2s;}
+
+
+.cancelbtn:hover{
+   background-color: aqua;
+transform: translateX(1);
+transition: 10ms;
+
+}
+
+
+        
